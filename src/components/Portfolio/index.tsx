@@ -1,70 +1,65 @@
 export default function Portfolio() {
   return (
-    <section
-      className="px-6 py-24 overflow-hidden text-secondary"
-      id="portfolio"
-    >
-      <div className="max-w-300 mx-auto">
-        <div className="flex flex-col md:flex-row justify-center items-center mb-16 gap-4 w-full text-center">
-          <div>
-            <h2 className="text-5xl md:text-6xl font-black tracking-tighter uppercase italic">
-              Trabalhos Recentes
-            </h2>
-            <p className="text-white/50 mt-4 text-lg">
-              Clique para ver cada projeto.
-            </p>
+    <section className="max-w-300 mx-auto px-6 pt-40 text-secondary">
+      <span className="text-primary font-bold tracking-widest uppercase text-sm">
+        Portfólio
+      </span>
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <h2 className="text-4xl md:text-5xl font-black mt-2">
+          Trabalhos Recentes
+        </h2>
+        <div className="flex gap-2">
+          <button className="px-4 py-2 rounded-full border border-primary/50 text-xs font-bold bg-primary/10 text-primary">
+            TIKTOK
+          </button>
+          <button className="px-4 py-2 rounded-full border border-white/10 text-xs font-bold hover:bg-white/5">
+            YOUTUBE
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div className="bg-[url(https://i.ytimg.com/vi/LEqQFHIAR_M/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDtkqB9ai6pOi_ykYf9ddw5MTWY0g&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute bottom-0 left-0 p-6 w-full">
+            <span className="bg-purple-500 text-[10px] px-2 py-0.5 rounded font-bold uppercase mb-2 inline-block">
+              SPEXA
+            </span>
+            <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mt-2"></div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6">
-          <div className="md:col-span-7 transition-all duration-300 cursor-pointer -rotate-2 hover:rotate-0 hover:scale-105">
-            <div className="relative aspect-16/10 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl glow-hover transition-all duration-300">
-              <div className="absolute bottom-8 left-8">
-                <span className="bg-primary text-[10px] font-black uppercase px-3 py-1 rounded-full mb-3 inline-block">
-                  Vídeo Horizontal
-                </span>
-                <h3 className="text-3xl font-black">
-                  Maiores mitadas do Mata-Mata
-                </h3>
-              </div>
-            </div>
+        <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div className="bg-[url(https://i.ytimg.com/vi/b6dzMutXFqk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAjSO5LSk2NeW5_BJpVhxvYBRSXEg&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute bottom-0 left-0 p-6 w-full">
+            <span className="bg-purple-500 text-[10px] px-2 py-0.5 rounded font-bold uppercase mb-2 inline-block">
+              BAHCRAFT
+            </span>
+            <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mt-2"></div>
           </div>
+        </div>
 
-          <div className="md:col-span-5 transition-all duration-300 cursor-pointer rotate-1 hover:rotate-0 hover:scale-105">
-            <div className="relative h-full min-h-100 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl glow-hover transition-all duration-300">
-              <div className="absolute bottom-8 left-8">
-                <span className="bg-white/20 backdrop-blur-md text-[10px] font-black uppercase px-3 py-1 rounded-full mb-3 inline-block">
-                  Reels / Tiktok
-                </span>
-                <h3 className="text-3xl font-black">
-                  Edição Estilo "Alex Hormozi"
-                </h3>
-              </div>
-            </div>
+        <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div className="bg-[url(https://i.ytimg.com/vi/psvx9jBBeP0/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLBkcI-lnZrH3B3xXXwC_WkTPNlPGw&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute bottom-0 left-0 p-6 w-full">
+            <span className="bg-purple-500 text-[10px] px-2 py-0.5 rounded font-bold uppercase mb-2 inline-block">
+              SPEXA
+            </span>
+            <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mt-2"></div>
           </div>
+        </div>
 
-          <div className="md:col-span-4 transition-all duration-300 cursor-pointer -rotate-2 hover:rotate-0 hover:scale-105">
-            <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl glow-hover transition-all duration-300">
-              <div className="absolute bottom-8 left-8">
-                <span className="bg-white/20 backdrop-blur-md text-[10px] font-black uppercase px-3 py-1 rounded-full mb-3 inline-block">
-                  Reels / Tiktok
-                </span>
-                <h3 className="text-2xl font-black">Cinematic Europe Trip</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className="md:col-span-8 transition-all duration-300 cursor-pointer rotate-1 hover:rotate-0 hover:scale-105">
-            <div className="relative aspect-21/9 rounded-3xl overflow-hidden border-2 border-white/10 shadow-2xl glow-hover transition-all duration-300">
-              <div className="absolute bottom-8 left-8">
-                <span className="bg-primary text-[10px] font-black uppercase px-3 py-1 rounded-full mb-3 inline-block">
-                  Vídeo Horizontal
-                </span>
-                <h3 className="text-3xl font-black">
-                  Day in the Life of a Creator
-                </h3>
-              </div>
-            </div>
+        <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div className="bg-[url(https://i.ytimg.com/vi/d2uMYW90GgA/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAhnvQzvd7UIGxOqrfZpcNsw6m-kw&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="absolute bottom-0 left-0 p-6 w-full">
+            <span className="bg-purple-500 text-[10px] px-2 py-0.5 rounded font-bold uppercase mb-2 inline-block">
+              KID BENGALA
+            </span>
+            <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mt-2"></div>
           </div>
         </div>
       </div>
