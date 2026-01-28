@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ee2bee;
+  --color-secondary: #f8f6f8;
+  --color-background: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(238, 43, 238, 0.3);
+}
