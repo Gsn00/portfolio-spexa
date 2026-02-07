@@ -39,6 +39,16 @@ body {
   transform: translateY(-10px) rotate(-1deg);
 }
 
+@media screen and (max-width: 768px) {
+  .staggered-item:nth-child(even) {
+    transform: translateY(-5px) rotate(1deg);
+  }
+
+  .staggered-item:nth-child(odd) {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

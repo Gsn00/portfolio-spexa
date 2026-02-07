@@ -2,7 +2,7 @@ import { Clapperboard, Film, Sparkles, Zap } from "lucide-react";
 
 export default function Technologies() {
   return (
-    <section className="max-w-300 mx-auto px-6 pt-40 text-secondary">
+    <section className="max-w-300 mx-auto pt-40 text-secondary px-10 md:px-0">
       <span className="text-primary font-bold tracking-widest uppercase text-sm">
         Tecnologias
       </span>
@@ -12,7 +12,7 @@ export default function Technologies() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
         <article className="rounded-3xl p-5 bg-[#101010] border border-primary/20 flex flex-col gap-3 group transition-all duration-500 neon-glow-purple hover:border-primary/40 hover:scale-102">
           <div className="aspect-square w-fit p-5 border border-primary/20 rounded-full bg-black transition-colors duration-500 group-hover:border-primary/40">
             <Clapperboard size={30} strokeWidth={1} />
@@ -29,7 +29,7 @@ export default function Technologies() {
           </div>
         </article>
 
-        <article className="rounded-3xl p-5 bg-[#101010] border border-white/20 flex flex-col gap-3 group transition-all duration-500 neon-glow-white hover:border-white hover:scale-102 relative top-3">
+        <article className="rounded-3xl p-5 bg-[#101010] border border-white/20 flex flex-col gap-3 group transition-all duration-500 neon-glow-white hover:border-white hover:scale-102 relative md:top-3">
           <div className="aspect-square w-fit p-5 border border-white/20 rounded-full bg-black transition-colors duration-500 group-hover:border-white">
             <Sparkles size={30} strokeWidth={1} />
           </div>
@@ -61,7 +61,7 @@ export default function Technologies() {
           </div>
         </article>
 
-        <article className="rounded-3xl p-5 bg-[#101010] border border-white/20 flex flex-col gap-3 group transition-all duration-500 neon-glow-white hover:border-white hover:scale-102 relative top-3">
+        <article className="rounded-3xl p-5 bg-[#101010] border border-white/20 flex flex-col gap-3 group transition-all duration-500 neon-glow-white hover:border-white hover:scale-102 relative md:top-3">
           <div className="aspect-square w-fit p-5 border border-white/20 rounded-full bg-black transition-colors duration-500 group-hover:border-white">
             <Zap size={30} strokeWidth={1} />
           </div>

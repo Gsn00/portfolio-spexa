@@ -14,13 +14,13 @@ export default function Portfolio() {
         </h2>
         <div className="flex gap-2">
           <button
-            className={`cursor-pointer px-4 py-2 rounded-full border text-xs font-bold ${activeFilter === "tiktok" ? "bg-primary/10 text-primary border-primary/50" : "hover:bg-white/5 border-white/10"}`}
+            className={`px-4 py-2 rounded-full border text-xs font-bold ${activeFilter === "tiktok" ? "bg-primary/10 text-primary border-primary/50" : "hover:bg-white/5 border-white/10"}`}
             onClick={() => setActiveFilter("tiktok")}
           >
             TIKTOK
           </button>
           <button
-            className={`cursor-pointer px-4 py-2 rounded-full border text-xs font-bold ${activeFilter === "youtube" ? "bg-primary/10 text-primary border-primary/50" : "hover:bg-white/5 border-white/10"}`}
+            className={`px-4 py-2 rounded-full border text-xs font-bold ${activeFilter === "youtube" ? "bg-primary/10 text-primary border-primary/50" : "hover:bg-white/5 border-white/10"}`}
             onClick={() => setActiveFilter("youtube")}
           >
             YOUTUBE
@@ -29,7 +29,7 @@ export default function Portfolio() {
       </div>
 
       {activeFilter === "tiktok" && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
             <div className="bg-[url(https://i.ytimg.com/vi/LEqQFHIAR_M/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDtkqB9ai6pOi_ykYf9ddw5MTWY0g&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

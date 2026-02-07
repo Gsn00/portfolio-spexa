@@ -16,8 +16,8 @@ export default function Services() {
           <div className="size-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-500 mb-6">
             <MonitorPlay size={40} strokeWidth={1} />
           </div>
-          <h3 className="text-2xl font-bold mb-4">Edição Longa</h3>
-          <p className="text-zinc-400 leading-relaxed mb-6">
+          <h3 className="text-xl md:text-2xl font-bold mb-4">Edição Longa</h3>
+          <p className="text-zinc-400 leading-relaxed mb-6 text-sm md:text-base">
             Edição fluida pra vídeos longos e aulas, com ritmo certo pra segurar
             quem está assistindo até o final.
           </p>
@@ -37,8 +37,8 @@ export default function Services() {
           <div className="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6">
             <Smartphone size={40} strokeWidth={1} />
           </div>
-          <h3 className="text-2xl font-bold mb-4">Reels/TikTok</h3>
-          <p className="text-zinc-400 leading-relaxed mb-6">
+          <h3 className="text-xl md:text-2xl font-bold mb-4">Reels/TikTok</h3>
+          <p className="text-zinc-400 leading-relaxed mb-6 text-sm md:text-base">
             Cortes rápidos, legendas dinâmicas e edição pensada pra chamar
             atenção nos primeiros segundos.
           </p>
@@ -60,8 +60,10 @@ export default function Services() {
               <Package2 size={40} strokeWidth={1} />
             </span>
           </div>
-          <h3 className="text-2xl font-bold mb-4">Pacotes Mensais</h3>
-          <p className="text-zinc-400 leading-relaxed mb-6">
+          <h3 className="text-xl md:text-2xl font-bold mb-4">
+            Pacotes Mensais
+          </h3>
+          <p className="text-zinc-400 leading-relaxed mb-6 text-sm md:text-base">
             Edição contínua pra quem posta sempre e quer crescer com
             consistência, sem dor de cabeça.
           </p>
