@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-export default function Portfolio() {
+export default function Portfolio({
+  openVideo,
+}: {
+  openVideo: (src: string) => void;
+}) {
   const [activeFilter, setActiveFilter] = useState("tiktok");
 
   return (
@@ -30,7 +34,14 @@ export default function Portfolio() {
 
       {activeFilter === "tiktok" && (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div
+            onClick={() =>
+              openVideo(
+                "https://video.gumlet.io/685b0700da5f39a3fc00a0c1/6987f0da742559dc5a4bb158/main.m3u8",
+              )
+            }
+            className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500"
+          >
             <div className="bg-[url(https://i.ytimg.com/vi/LEqQFHIAR_M/oardefault.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLDtkqB9ai6pOi_ykYf9ddw5MTWY0g&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full">
@@ -41,7 +52,14 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500">
+          <div
+            onClick={() =>
+              openVideo(
+                "https://video.gumlet.io/685b0700da5f39a3fc00a0c1/698811e6742559dc5a4e0b7b/main.m3u8",
+              )
+            }
+            className="staggered-item group relative overflow-hidden rounded-2xl aspect-9/16 neon-glow-purple transition-all duration-500"
+          >
             <div className="bg-[url(https://i.ytimg.com/vi/b6dzMutXFqk/oar2.jpg?sqp=-oaymwEoCJUDENAFSFqQAgHyq4qpAxcIARUAAIhC2AEB4gEKCBgQAhgGOAFAAQ==&rs=AOn4CLAjSO5LSk2NeW5_BJpVhxvYBRSXEg&usqp=CCk)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full">
@@ -78,7 +96,14 @@ export default function Portfolio() {
 
       {activeFilter === "youtube" && (
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-video neon-glow-purple transition-all duration-500">
+          <div
+            onClick={() =>
+              openVideo(
+                "https://video.gumlet.io/685b0700da5f39a3fc00a0c1/6988094f924a60df4b2cc80d/main.m3u8",
+              )
+            }
+            className="staggered-item group relative overflow-hidden rounded-2xl aspect-video neon-glow-purple transition-all duration-500"
+          >
             <div className="bg-[url(https://img.youtube.com/vi/F_qyNqjrYHQ/maxresdefault.jpg)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full">
@@ -88,7 +113,14 @@ export default function Portfolio() {
               <div className="h-1 w-0 group-hover:w-full bg-primary transition-all duration-500 mt-2"></div>
             </div>
           </div>
-          <div className="staggered-item group relative overflow-hidden rounded-2xl aspect-video neon-glow-purple transition-all duration-500">
+          <div
+            onClick={() =>
+              openVideo(
+                "https://video.gumlet.io/685b0700da5f39a3fc00a0c1/6988094f924a60df4b2cc80d/main.m3u8",
+              )
+            }
+            className="staggered-item group relative overflow-hidden rounded-2xl aspect-video neon-glow-purple transition-all duration-500"
+          >
             <div className="bg-[url(https://img.youtube.com/vi/3-yV5oK6NrQ/maxresdefault.jpg)] absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"></div>
             <div className="absolute inset-0 bg-linear-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="absolute bottom-0 left-0 p-6 w-full">
