@@ -1,6 +1,33 @@
 import { CheckCheck, MonitorPlay, Package2, Smartphone } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function Services() {
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: (index: number) => ({
+      opacity: 0,
+      y: 50,
+      scale: index === 1 ? 0.95 : 0.9,
+    }),
+    show: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      scale: index === 1 ? 1.05 : 1,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    }),
+  };
+
   return (
     <section className="max-w-300 mx-auto px-6 pt-40 text-secondary">
       <div className="text-center mb-16">
@@ -11,8 +38,18 @@ export default function Services() {
           Conteúdo editado pra prender atenção e crescer de verdade.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-purple-500/30 hover:border-purple-500 transition-colors duration-500">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <motion.div
+          custom={0}
+          variants={item}
+          className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-purple-500/30 hover:border-purple-500 transition-colors duration-500"
+        >
           <div className="size-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-500 mb-6">
             <MonitorPlay size={40} strokeWidth={1} />
           </div>
@@ -31,9 +68,13 @@ export default function Services() {
               Áudio limpo e visual bem tratado
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-primary/30 hover:border-primary transition-colors scale-105 shadow-2xl shadow-primary/10 duration-500">
+        <motion.div
+          custom={1}
+          variants={item}
+          className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-primary/30 hover:border-primary transition-colors scale-105 shadow-2xl shadow-primary/10 duration-500"
+        >
           <div className="size-14 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-6">
             <Smartphone size={40} strokeWidth={1} />
           </div>
@@ -52,9 +93,13 @@ export default function Services() {
               Motion e legendas animadas
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-purple-500/30 hover:border-purple-500 transition-colors duration-500">
+        <motion.div
+          custom={2}
+          variants={item}
+          className="bg-[#101010] p-10 rounded-3xl border-t-2 border-b-2 border-purple-500/30 hover:border-purple-500 transition-colors duration-500"
+        >
           <div className="size-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-500 mb-6">
             <span className="material-symbols-outlined text-4xl">
               <Package2 size={40} strokeWidth={1} />
@@ -77,8 +122,8 @@ export default function Services() {
               Foco em crescimento e alcance
             </li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
